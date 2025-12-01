@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de administrador CAT</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .kpi { display: inline-block; margin: 10px; padding: 10px 15px; background:#E3F2FD; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 6px; font-size: 14px; }
+    th { background: #BBDEFB; }
+  </style>
+</head>
+<body>
+  <h1>Panel de administrador CAT</h1>
+
+  <div class="kpi">Solicitudes abiertas: <strong>12</strong></div>
+  <div class="kpi">En proceso: <strong>5</strong></div>
+  <div class="kpi">Resueltas hoy: <strong>3</strong></div>
+
+  <h2>Todas las solicitudes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Usuario</th>
+        <th>Categoría</th>
+        <th>Prioridad</th>
+        <th>Estado</th>
+        <th>Técnico</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>juan.perez</td>
+        <td>Red</td>
+        <td>Alta</td>
+        <td>Recibida</td>
+        <td>Sin asignar</td>
+        <td><a href="asignar-tecnico.html?id=101">Asignar técnico</a></td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>maria.gomez</td>
+        <td>Software</td>
+        <td>Media</td>
+        <td>En proceso</td>
+        <td>Ana</td>
+        <td><a href="asignar-tecnico.html?id=102">Reasignar</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
