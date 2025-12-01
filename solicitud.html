@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nueva solicitud de soporte</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+    label { display:block; margin-top:10px; }
+    input, select, textarea { width:100%; padding:6px; box-sizing:border-box; }
+    button { margin-top:12px; padding:8px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Registrar nueva solicitud</h1>
+
+  <form action="solicitud-enviada.html" method="post">
+    <label for="categoria">Categoría</label>
+    <select id="categoria" name="categoria" required>
+      <option value="">-- Seleccione --</option>
+      <option>Hardware</option>
+      <option>Software</option>
+      <option>Red</option>
+      <option>Cuenta/Acceso</option>
+    </select>
+
+    <label for="prioridad">Prioridad</label>
+    <select id="prioridad" name="prioridad" required>
+      <option>Baja</option>
+      <option>Media</option>
+      <option>Alta</option>
+    </select>
+
+    <label for="descripcion">Descripción del problema</label>
+    <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+
+    <label for="archivo">Adjuntar evidencia (opcional)</label>
+    <input type="file" id="archivo" name="archivo">
+
+    <button type="submit">Enviar solicitud</button>
+  </form>
+</body>
+</html>
