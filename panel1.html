@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de técnico</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px; font-size: 14px; }
+    th { background: #E3F2FD; }
+  </style>
+</head>
+<body>
+  <h1>Panel del técnico - Solicitudes asignadas</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Usuario</th>
+        <th>Categoría</th>
+        <th>Prioridad</th>
+        <th>Estado</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>juan.perez</td>
+        <td>Red</td>
+        <td>Alta</td>
+        <td>En proceso</td>
+        <td><a href="detalle-solicitud.html?id=101">Ver detalle</a></td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>maria.gomez</td>
+        <td>Software</td>
+        <td>Media</td>
+        <td>Recibida</td>
+        <td><a href="detalle-solicitud.html?id=102">Ver detalle</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

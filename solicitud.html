@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle de solicitud</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    label { display: block; margin-top: 8px; }
+    select, textarea { width: 100%; max-width: 400px; }
+  </style>
+</head>
+<body>
+  <h1>Detalle de solicitud #101</h1>
+
+  <p><strong>Usuario:</strong> juan.perez</p>
+  <p><strong>Categoría:</strong> Red</p>
+  <p><strong>Descripción:</strong> No tengo acceso a Internet en el laboratorio.</p>
+
+  <form>
+    <label for="estado">Cambiar estado:</label>
+    <select id="estado" name="estado">
+      <option>Recibida</option>
+      <option selected>En proceso</option>
+      <option>Resuelta</option>
+      <option>Cerrada</option>
+    </select>
+
+    <label for="comentario">Comentario del técnico:</label>
+    <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+    <button type="submit" style="margin-top:10px;">Guardar cambios</button>
+  </form>
+
+  <p><a href="panel-tecnico.html">Volver al panel</a></p>
+</body>
+</html>
